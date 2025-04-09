@@ -25,11 +25,13 @@ public class AddEditTaskActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_edit_task);
 
+        // 🟢 1. Initialize views BEFORE using them
         editTextTitle = findViewById(R.id.edit_text_title);
         editTextDescription = findViewById(R.id.edit_text_description);
         editTextDueDate = findViewById(R.id.edit_text_due_date);
         buttonSave = findViewById(R.id.button_save);
 
+        // 🟢 2. If this is an Edit action, populate fields
         if (getIntent().hasExtra("task_id")) {
             setTitle("Edit Task");
             taskId = getIntent().getIntExtra("task_id", -1);
@@ -40,6 +42,7 @@ public class AddEditTaskActivity extends AppCompatActivity {
             setTitle("Add Task");
         }
 
+        // 🗓 3. Date picker for due date
         editTextDueDate.setOnClickListener(v -> {
             final Calendar calendar = Calendar.getInstance();
             int year = calendar.get(Calendar.YEAR);
@@ -57,8 +60,10 @@ public class AddEditTaskActivity extends AppCompatActivity {
             datePickerDialog.show();
         });
 
+        // 📦 4. Connect to ViewModel
         taskViewModel = new ViewModelProvider(this).get(TaskViewModel.class);
 
+        // 💾 5. Save Button Click
         buttonSave.setOnClickListener(view -> saveTask());
     }
 
