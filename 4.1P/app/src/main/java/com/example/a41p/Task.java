@@ -8,7 +8,7 @@ public class Task {
 
     @PrimaryKey(autoGenerate = true)
     private int id;
-
+    private boolean isCompleted;
     private String title;
     private String description;
     private String dueDate;
@@ -17,6 +17,7 @@ public class Task {
         this.title = title;
         this.description = description;
         this.dueDate = dueDate;
+        this.isCompleted = false;
     }
 
     public void setId(int id) {
@@ -34,8 +35,15 @@ public class Task {
     public String getDescription() {
         return description;
     }
+    public boolean isCompleted() {
+        return isCompleted;
+    }
 
+    public void setCompleted(boolean completed) {
+        isCompleted = completed;
+    }
     public String getDueDate() {
         return dueDate;
     }
 }
+
