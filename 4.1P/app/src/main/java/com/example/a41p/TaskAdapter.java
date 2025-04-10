@@ -3,14 +3,51 @@ package com.example.a41p;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskHolder> {
+
     private List<Task> tasks = new ArrayList<>();
+
+    private OnItemClickListener itemClickListener;
+    private OnEditButtonClickListener editButtonClickListener;
+
+    // ViewHolder
+    class TaskHolder extends RecyclerView.ViewHolder {
+        private final TextView textViewTitle;
+        private final TextView textViewDueDate;
+        private final Button buttonEdit;
+
+        public TaskHolder(@NonNull View itemView) {
+            super(itemView);
+            textViewTitle = itemView.findViewById(R.id.text_view_title);
+            textViewDueDate = itemView.findViewById(R.id.text_view_due_date);
+            buttonEdit = itemView.findViewById(R.id.button_edit);
+
+
+            itemView.setOnClickListener(v -> {
+                int position = getAdapterPosition();
+                if (itemClickListener != null && position != RecyclerView.NO_POSITION) {
+                    itemClickListener.onItemClick(tasks.get(position));
+                }
+            });
+
+
+            buttonEdit.setOnClickListener(v -> {
+                int position = getAdapterPosition();
+                if (editButtonClickListener != null && position != RecyclerView.NO_POSITION) {
+                    editButtonClickListener.onEditClick(tasks.get(position));
+                }
+            });
+        }
+    }
 
     @NonNull
     @Override
@@ -37,33 +74,25 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskHolder> {
         notifyDataSetChanged();
     }
 
-    private OnItemClickListener listener;
+    public Task getTaskAt(int position) {
+        return tasks.get(position);
+    }
+
 
     public interface OnItemClickListener {
         void onItemClick(Task task);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
-        this.listener = listener;
+        this.itemClickListener = listener;
     }
-    public Task getTaskAt(int position) {
-        return tasks.get(position);
+
+
+    public interface OnEditButtonClickListener {
+        void onEditClick(Task task);
     }
-    class TaskHolder extends RecyclerView.ViewHolder {
-        private TextView textViewTitle;
-        private TextView textViewDueDate;
 
-        public TaskHolder(View itemView) {
-            super(itemView);
-            textViewTitle = itemView.findViewById(R.id.text_view_title);
-            textViewDueDate = itemView.findViewById(R.id.text_view_due_date);
-
-            itemView.setOnClickListener(v -> {
-                int position = getAdapterPosition();
-                if (listener != null && position != RecyclerView.NO_POSITION) {
-                    listener.onItemClick(tasks.get(position));
-                }
-            });
-        }
+    public void setOnEditButtonClickListener(OnEditButtonClickListener listener) {
+        this.editButtonClickListener = listener;
     }
 }

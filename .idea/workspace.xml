@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7381147f-b259-4c73-b74e-c9978d4bdff6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/4.1P/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/AllTasksFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/AllTasksFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/CompletedTasksFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/CompletedTasksFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_all_tasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_all_tasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_completed_tasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_completed_tasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/task_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/task_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Zbell0&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Zbell0/SIT708",
+    "accountId": "6f0e6dae-bb9b-4400-975c-b23a28385f15"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vObx424I3VZHAsMUE6ZqY1sExv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/eunji/AndroidStudioProjects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7381147f-b259-4c73-b74e-c9978d4bdff6" name="Changes" comment="" />
+      <created>1744019310466</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744019310466</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/Week2SimpleTemperatureapp" />
+      <path value="$PROJECT_DIR$/2.1P" />
+      <path value="$PROJECT_DIR$/4.1P" />
+    </ignored-roots>
+  </component>
+</project>
