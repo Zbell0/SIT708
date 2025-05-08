@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7F2DE"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingTop="60dp"
+    android:paddingRight="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="60dp"
+        android:text="Lost and
+        Found App"
+        android:textSize="50dp"
+        android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/btn_create_advert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Create New Advert"
+        android:textColorLink="#673AB7"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_view_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show All Lost / Found Items"
+        android:textSize="18sp" />
+
+</LinearLayout>
