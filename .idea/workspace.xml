@@ -5,21 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7381147f-b259-4c73-b74e-c9978d4bdff6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/4.1P/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/AllTasksFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/AllTasksFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/CompletedTasksFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/CompletedTasksFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/java/com/example/a41p/TaskViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_all_tasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_all_tasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_completed_tasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/fragment_completed_tasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/task_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/layout/task_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.1P/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.1P/.idea/deploymentTargetSelector.xml" beforeDir="false" afterPath="$PROJECT_DIR$/4.1P/.idea/deploymentTargetSelector.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +25,12 @@
     &quot;assignee&quot;: &quot;Zbell0&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Zbell0/SIT708",
-    "accountId": "6f0e6dae-bb9b-4400-975c-b23a28385f15"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Zbell0/SIT708&quot;,
+    &quot;accountId&quot;: &quot;6f0e6dae-bb9b-4400-975c-b23a28385f15&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
