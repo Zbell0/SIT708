@@ -21,7 +21,7 @@ public class HomeFragment extends Fragment {
     private String username;
     private TextView welcomeText;
     private EditText topicInput;
-    private Button generateQuizButton, backBtn;
+    private Button generateQuizButton, backBtn, profileBtn;
 
     public HomeFragment() {
         // Required empty constructor
@@ -44,7 +44,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-
+        profileBtn = view.findViewById(R.id.profileBtn);
         welcomeText = view.findViewById(R.id.welcomeText);
         topicInput = view.findViewById(R.id.topicInput);
         generateQuizButton = view.findViewById(R.id.generateQuizButton);
@@ -56,10 +56,19 @@ public class HomeFragment extends Fragment {
             welcomeText.setText("Hello, " + username + "!");
         }
 
+        profileBtn.setOnClickListener(v -> {
+            ProfileFragment pf = ProfileFragment.newInstance(username);
+            requireActivity().getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, pf)
+                    .addToBackStack(null)
+                    .commit();
+        });
+
         generateQuizButton.setOnClickListener(v -> {
             String topic = topicInput.getText().toString().trim();
             if (!topic.isEmpty()) {
-                QuizFragment quizFragment = QuizFragment.newInstance(topic);
+                QuizFragment quizFragment = QuizFragment.newInstance(topic,username);
                 requireActivity().getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.fragment_container, quizFragment)
@@ -69,6 +78,8 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getContext(), "Please enter a topic", Toast.LENGTH_SHORT).show();
             }
         });
+
+
 
         return view;
     }

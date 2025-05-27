@@ -21,6 +21,28 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <!-- deep‑link: https://myquizapp.com/share/profile/{username} -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="https"
+                    android:host="myquizapp.com"
+                    android:pathPrefix="/share/profile/" />
+            </intent-filter>
+
+            <!-- deep‑link: http://myquizapp.com/share/profile/{username} (fallback) -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="http"
+                    android:host="myquizapp.com"
+                    android:pathPrefix="/share/profile/" />
+            </intent-filter>
         </activity>
     </application>
 

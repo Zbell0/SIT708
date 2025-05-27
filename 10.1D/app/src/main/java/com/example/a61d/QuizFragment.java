@@ -39,12 +39,14 @@ public class QuizFragment extends Fragment {
     private ArrayList<String> selectedAnswers = new ArrayList<>();
 
     private String topic = "Movies";
+    private String username;
     private static final String BASE_URL = "http://10.0.2.2:5001/getQuiz?topic=";
 
-    public static QuizFragment newInstance(String topic) {
+    public static QuizFragment newInstance(String topic, String username) {
         QuizFragment fragment = new QuizFragment();
         Bundle args = new Bundle();
         args.putString("topic", topic);
+        args.putString("username", username);
         fragment.setArguments(args);
         return fragment;
     }
@@ -63,6 +65,7 @@ public class QuizFragment extends Fragment {
 
         if (getArguments() != null) {
             topic = getArguments().getString("topic", "Movies");
+            username = getArguments().getString("username", "anonymous");
         }
 
         fetchQuizData();
@@ -83,7 +86,7 @@ public class QuizFragment extends Fragment {
             } else {
                 requireActivity().getSupportFragmentManager()
                         .beginTransaction()
-                        .replace(R.id.fragment_container, ResultFragment.newInstance(quizItems, selectedAnswers))
+                        .replace(R.id.fragment_container, ResultFragment.newInstance(quizItems, selectedAnswers,username))
                         .addToBackStack(null)
                         .commit();
             }
